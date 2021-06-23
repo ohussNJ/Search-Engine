@@ -72,7 +72,7 @@ public class LittleSearchEngine {
 	 * @param kws Keywords hash table for a document
 	 */
 	public void mergeKeywords(HashMap<String,Occurrence> kws) {
-		/** COMPLETE THIS METHOD **/
+
 		for (String w : kws.keySet()) {
 			if (keywordsIndex.containsKey(w)) {
 				ArrayList<Occurrence> occ = keywordsIndex.get(w);
@@ -99,7 +99,6 @@ public class LittleSearchEngine {
 	 * If a word has multiple trailing punctuation characters, they must all be stripped
 	 * So "word!!" will become "word", and "word?!?!" will also become "word"
 	 * 
-	 * See assignment description for examples
 	 * 
 	 * @param word Candidate word
 	 * @return Keyword (word without trailing punctuation, LOWER CASE)
@@ -156,7 +155,6 @@ public class LittleSearchEngine {
 	 *         your code - it is not used elsewhere in the program.
 	 */
 	public ArrayList<Integer> insertLastOccurrence(ArrayList<Occurrence> occs) {
-		/** COMPLETE THIS METHOD **/
 		if(occs.size() ==1) {
 			return null;
 		}
@@ -224,7 +222,6 @@ public class LittleSearchEngine {
 	 * 
 	 * The result set is limited to 5 entries. If there are no matches at all, result is null.
 	 * 
-	 * See assignment description for examples
 	 * 
 	 * @param kw1 First keyword
 	 * @param kw1 Second keyword

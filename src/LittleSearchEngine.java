@@ -40,7 +40,7 @@ public class LittleSearchEngine {
 	 */
 	public HashMap<String,Occurrence> loadKeywordsFromDocument(String docFile) 
 	throws FileNotFoundException {
-		/** COMPLETE THIS METHOD **/
+
 		Scanner s=new Scanner(new File(docFile));
 		String keyword="";
 		HashMap<String, Occurrence> idk=new HashMap<String,Occurrence>();
@@ -230,7 +230,6 @@ public class LittleSearchEngine {
 	 *         returns null or empty array list.
 	 */
 	public ArrayList<String> top5search(String kw1, String kw2) {
-		/** COMPLETE THIS METHOD **/
 		ArrayList<String> docs=new ArrayList<>();
 		ArrayList<Occurrence> kw1Docs=keywordsIndex.get(kw1);
 		ArrayList<Occurrence> kw2Docs=keywordsIndex.get(kw2);

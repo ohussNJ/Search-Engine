@@ -5,7 +5,6 @@ package lse;
  * document name, and the frequency of occurrence in that document. Occurrences are
  * associated with keywords in an index hash table.
  * 
- * @author RU-NB-CS112
  *
  */
 public class Occurrence {
